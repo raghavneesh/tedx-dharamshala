@@ -1,0 +1,273 @@
+$theme-base:#222;
+$theme-neutral:#eee;
+$theme-tedx:#E40000;
+$body-font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+
+$small-screen: emCalc(768);
+$medium-screen: emCalc(1280);
+$large-screen: emCalc(1440);
+$small: "only screen and (min-width:"#{$small-screen}")";
+
+body{
+	background-color:$theme-base;
+	color:$theme-neutral;
+}
+header{
+	background-color:$theme-neutral;
+}
+h2,h3,h4{
+	color:$theme-tedx;
+	font-weight: normal;
+}
+
+header{
+	padding:10px 10px 0 10px;
+	&>.row{
+		position:relative;
+		@media all and (max-width: 1500px) and (min-width: 768px){
+			&>div:nth-child(2) {
+				position:absolute;
+				right:0;
+				bottom: 0;
+			}
+		}
+	}
+	img{
+		float:left;
+		margin:10px 0;
+	}	
+	a.tedx{
+		font-size: 150%;
+		padding: 10px 0;
+		color:$theme-base;
+		float:left;
+		b{
+			color:$theme-tedx;
+		}
+		&:hover{
+		}
+	}
+}
+
+article{
+	padding:0 70px 70px 70px;
+}
+
+#venue-details{
+	margin: 20px 0;
+	background-color: $theme-neutral;
+	padding:30px 20px;
+	h5:first-child{
+		margin:0;
+		small{
+			color: $theme-tedx;
+		}
+	}
+	h5.subheader{
+		color:$theme-tedx;
+		margin-top: 30px;
+	}
+	p{
+		color:$theme-base;
+		font-size: 80%;
+		margin-bottom:5px;
+	}
+	img{
+		width:100%;
+		margin-bottom:10px;
+	}
+	&>a{
+		font-size: 70%;
+		padding: 5px;
+		background-color: $theme-base;
+		color: $theme-neutral;
+		opacity:0.8;
+		&:hover{
+			opacity:1;
+		}
+	}
+}
+
+nav{
+	float:right;
+	clear:right;
+	li{
+		padding:0 2px;
+	}
+	a.button{
+		background-color: $theme-base;
+		border-color: $theme-base;
+		margin:0;
+		font-weight: normal;
+		&:hover,&.active{
+			background-color: $theme-tedx;
+		}
+	}
+
+}
+
+
+
+#search{
+	position:relative;
+	width:200px;
+	float:right;
+	right:0;
+	margin-bottom: 10px;
+	input{
+		background-color: transparent;
+		border-color: transparent;
+		box-shadow:none;
+		-webkit-box-shadow:none;
+		margin:0;
+		padding-left: 15px;
+	}
+	.input-line{
+		height:3px;
+		border-bottom:1px solid $theme-tedx;
+		border-left:1px solid $theme-tedx;
+		position:relative;
+		bottom:0;
+	}
+	i{
+		position:absolute;
+		right:6px;
+		top:7px;
+		font-size: 110%;
+		color:$theme-base;
+		opacity:0.6;
+	}
+}
+
+#banner{
+	//display:none;
+}
+
+#theme{
+	h1{
+		color:$theme-neutral;
+		font-weight: normal;
+		font-size: 400%;
+		font-family: "Helvetica";
+		position:relative;
+		span{
+			position:absolute;
+			right:0;
+			top:-58%;
+			font-size: 200%;
+			color:$theme-tedx;
+			font-weight: normal;
+		}
+	}
+	p{
+		font-size: 70%;
+	}
+}
+h4{
+	font-size:120%;
+	line-height:90%;
+	position:relative;
+	i{
+		float:left;
+		padding:5px 10px 5px;
+		font-size: 110%;
+		color:$theme-neutral;
+	}
+	small{
+	}
+}
+
+#schedule{
+	list-style: none;
+	li:not(:last-child){
+		padding-bottom:10px;
+		background: linear-gradient(to right, rgba(133,142,153,0) 6%,rgba(133,142,153,1) 7%,rgba(134,143,154,0) 8%,rgba(229,229,229,0) 100%); /* W3C */
+	}
+	small{
+		color: $theme-tedx;
+		margin-left: 10px;
+	}
+}
+
+.label{
+	opacity:0.9;
+	padding:10px;
+	background-color: $theme-neutral;
+	color:$theme-base;
+	margin-right: 15px;
+	border-radius: 5px;
+	&:after{
+		content:" hrs";
+		opacity:0.8;
+	}
+}
+
+#register.tedx{
+	width:100%;
+	background-color:$theme-tedx;
+	border-color:transparent;
+	color:$theme-neutral;
+}
+
+footer{
+	background-color: #ccc;
+	padding: 10px 0;
+	border-top:2px solid $theme-tedx;
+	h6{
+		color: $theme-tedx;
+	}
+	p{
+		color: inherit;
+	}
+}
+
+/* Carousel */
+.ca-container{
+	height:340px;
+}
+.ca-item-main{
+	background-color:black;
+	position: relative;
+	h2{
+		color:$theme-neutral;
+		text-align: left;
+	}
+	p{
+		text-align: left;
+		font-size: 70%;
+		margin:0;
+	}
+}
+.ca-content-wrapper{
+	background-color: $theme-base;
+}
+.ca-content{
+	color:$theme-neutral;
+	padding:15px;
+	h3{
+		color:$theme-tedx;
+	}
+	ul{
+		list-style: none;
+	}
+	.ca-content-text,ul{
+		padding:5px;
+		margin:0;
+	}
+	.ca-close{
+		background-color: $theme-tedx;
+	}
+}
+a.ca-more{
+	position: absolute;
+	bottom:0;
+	padding:10px;
+	background-color: rgba(0,0,0,0.5);
+	&:hover{
+		color:inherit;
+	}
+	span{
+		color: $theme-tedx;
+		float: right;
+	}
+}
