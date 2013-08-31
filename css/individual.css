@@ -1,10 +1,10 @@
 .bg {
-	height: 800px;
 }
 
 #bannerindividual {
 	padding-top: 15px;
 	padding-bottom: 15px;
+	background	: #282828;
 }
 
 .section_nav .button-group a{

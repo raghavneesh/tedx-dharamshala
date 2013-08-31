@@ -271,11 +271,13 @@ footer p {
 .ca-item-main {
 	background-color: black;
 	position: relative;
+	max-height: 340px;
 }
 /* line 231, ../_sass/style.scss */
 .ca-item-main h2 {
 	color: #eeeeee;
 	text-align: left;
+	font-size	: 30px;
 }
 /* line 235, ../_sass/style.scss */
 .ca-item-main p {
@@ -318,6 +320,8 @@ a.ca-more {
 	bottom: 0;
 	padding: 10px;
 	background-color: rgba(0, 0, 0, 0.5);
+	height	: 130px;
+	width	: 100%;
 }
 /* line 266, ../_sass/style.scss */
 a.ca-more:hover {
